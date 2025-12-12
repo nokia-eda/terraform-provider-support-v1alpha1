@@ -1,0 +1,30 @@
+provider:
+  name: support
+
+data_sources:
+  locator:
+    read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}
+      method: GET
+
+  locator_list:
+    read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators
+      method: GET
+
+  workflow_get_inputs_resp_elem:
+    read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_input
+      method: GET
+
+resources:
+  locator:
+    create:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators
+      method: POST
+    read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}
+      method: GET
+    delete:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}
+      method: DELETE

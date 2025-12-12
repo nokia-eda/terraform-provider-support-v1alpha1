@@ -1,0 +1,12 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/workflows/v1/support.eda.nokia.com/v1alpha1/locators,GET,com.nokia.eda.support.v1alpha1.LocatorList,,false,false,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators,GET,com.nokia.eda.support.v1alpha1.LocatorList,locator_list,true,true,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators,POST,com.nokia.eda.support.v1alpha1.Locator,locator,true,false,true
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name},DELETE,,locator,true,false,true
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name},GET,com.nokia.eda.support.v1alpha1.Locator,locator,true,true,true
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_artifacts,GET,,,false,false,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_artifacts/{artifact},GET,,,false,false,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_input,GET,WorkflowGetInputsRespElem,workflow_get_inputs_resp_elem,true,true,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_input,PUT,WorkflowInputData,,false,false,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_logs,GET,,,false,false,false
+/workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_terminate,PUT,,,false,false,false

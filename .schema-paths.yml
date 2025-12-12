@@ -1,0 +1,39 @@
+workflow_get_inputs_resp_elem:
+  - read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_input
+      method: GET
+
+workflow_input_data:
+  - update:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}/_input
+      method: PUT
+
+com.nokia.eda.support.v1alpha1.locator:
+  - create:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators
+      method: POST
+  - read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators/{name}
+      method: GET
+
+com.nokia.eda.support.v1alpha1.locator_list:
+  - read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/locators
+      method: GET
+  - read:
+      path: /workflows/v1/support.eda.nokia.com/v1alpha1/namespaces/{namespace}/locators
+      method: GET
+
+totalPaths: 8
+totalSchemas: 12
+usedSchemas: 4
+unusedSchemas: 8
+unusedSchemaList:
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - WorkflowIdentifier
+  - WorkflowInputDataElem
+  - com.nokia.eda.support.v1alpha1.Locator_alarms
+  - com.nokia.eda.support.v1alpha1.Locator_deviations
+  - com.nokia.eda.support.v1alpha1.Locator_metadata
